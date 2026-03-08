@@ -8,21 +8,30 @@
     <!--Icono de la pagina-->
     <link rel="icon" href="images/logoFoca.png" />
     <!--Referencia CSS-->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/navbar2.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <div class="headerIzq">
           <img src="images/logoFoca.png" alt="Logo de Foca Ice" width="150" />
           <a href="index.html">Foca Ice</a>
         </div>
-        <div class="headerDer">
-          <a href="#nosotros">Nosotros</a>
-          <a href="productos.html">Productos</a>
-          <a href="#blog">Blog</a>
-          <a href="contacto.html" style="font-weight: bold">Contacto</a>
-        </div>
+
+        <ul class="headerDer">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li>
+            <a href="contacto.html" style="font-weight: bold">Contacto</a>
+          </li>
+        </ul>
+
+        <button class="botonNavBarPhone">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </nav>
     </header>
 
@@ -52,5 +61,6 @@
         </aside>
       </section>
     </main>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
