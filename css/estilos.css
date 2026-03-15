@@ -4,6 +4,8 @@ main {
   margin-right: 20%;
 }
 
+/* ---------- TEXTO-DISTRIBUCION ---------- */
+
 .contenidoDistribucion {
   display: flex;
   justify-content: space-around;
@@ -11,7 +13,8 @@ main {
   gap: 10%;
 }
 
-.contenidoDistribucion p {
+.contenidoDistribucion p,
+.contenidoMapa p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-align: justify;
@@ -43,7 +46,7 @@ main {
   padding-left: 10px; /* Separacion interior de texto a box */
   margin-bottom: 20px;
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   border-radius: 5px;
 }
 .formularioContacto textarea {
@@ -58,4 +61,11 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* ---------- MAPA ---------- */
+.contenidoMapa .leyendaMapa {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
 }
