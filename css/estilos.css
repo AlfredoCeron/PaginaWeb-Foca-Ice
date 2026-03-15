@@ -69,3 +69,19 @@ main {
   color: gray;
   font-size: 15px;
 }
+
+/* ---------- TELEFONO ---------- */
+@media (max-width: 820px) {
+  main {
+    /* Margen Izq-Der (ocupa casi toda la pantalla) */
+    margin: 10px;
+  }
+  .contenidoDistribucion {
+    flex-wrap: wrap; /* 1 Fila */
+  }
+  .formularioContacto input,
+  .formularioContacto textarea {
+    width: 90%; /* AnchoCampoEntrada */
+    font-size: small;
+  }
+}
