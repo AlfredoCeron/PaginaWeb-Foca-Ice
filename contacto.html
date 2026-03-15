@@ -59,9 +59,62 @@
           </p>
         </aside>
       </section>
+
+      <section class="formularioContacto">
+        <br /><br />
+        <form>
+          <label for="nombre">Nombre *</label>
+          <br />
+
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+          <br />
+
+          <label for="email">Correo electrónico *</label>
+          <br />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingresa tu correo electrónico"
+            required
+          />
+          <br />
+
+          <label for="telefono">Teléfono</label>
+          <br />
+
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Ingresa tu número telefónico    (10 dígitos)"
+            pattern="[0-9]{10}"
+          />
+          <br />
+
+          <label for="mensaje">Mensaje *</label>
+          <br />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Ingresa tu mensaje"
+            required
+          ></textarea>
+
+          <br />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <br />
     </main>
 
-    <br /><br /><br /><br /><br /><br /><br /><br />
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section" style="text-align: center">
@@ -96,6 +149,7 @@
               >
                 <!-- Abre conversacion a WhatsApp -->
                 <img src="images/whatsappIcon.png" alt="Icono de WhatsApp" />
+
                 (+52) 55 2535 6275</a
               >
             </li>
