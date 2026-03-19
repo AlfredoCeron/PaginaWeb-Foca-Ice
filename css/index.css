@@ -11,19 +11,14 @@ main {
   text-align: center;
   gap: 10px; /* separacion V entre elementos */
   padding: 50px;
-  background-color: red;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 1);
   border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 70px;
 }
-
-.presentacion button {
-  background-color: #0cb1f2;
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  border: solid 1px black;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
+.presentacion p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 .botonPresentacionProductosDestacados {
@@ -39,14 +34,80 @@ main {
   text-decoration: none;
   display: inline-block;
 }
+
+.botonPresentacionProductosDestacados:hover {
+  background-color: #0a8ac1;
+  color: white;
+}
+
+/* PRODUCTOS DESTACADOS */
+.productoEstrella {
+  margin-bottom: 50px;
+}
+.productosEstrellaContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /*Separacion H entre productos*/
+}
+.productoEstrella {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra Image H*/
+}
+.productoEstrella img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.productoEstrella h3,
+.productoEstrella p {
+  margin: 0px;
+  text-align: left;
+}
+
 /* VIDEO */
 
 .video video {
   display: block;
-  background-color: red;
-  padding: 20px;
+  background-color: black;
+  padding: 12px;
   border-radius: 10px;
-  width: 50%;
+  width: 80%;
   height: auto;
   justify-self: center;
+}
+
+.contacto {
+  display: flex;
+  align-items: center; /* Centra V*/
+  justify-content: center; /* Centra H*/
+  border-radius: 10px;
+  gap: 100px; /* Espacio entre imagen y texto */
+  margin: 50px 20px;
+}
+.imagenContacto {
+  display: flex;
+  justify-content: center; /* Centra H*/
+  align-items: center; /* Centra V*/
+}
+.imagenContacto img {
+  width: 250px;
+  height: auto;
+}
+.textoContacto {
+  width: 100%;
+  text-align: center;
+}
+.textoContacto p {
+  margin: 20px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.textoContacto .botonPresentacionProductosDestacados {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap; /*No saltoLinea*/
 }
