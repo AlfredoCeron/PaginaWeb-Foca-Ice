@@ -6,27 +6,195 @@
     <!--Titulo de la página-->
     <title>Foca Ice</title>
     <!--Icono de la pagina-->
-    <link rel="icon" href="images/logoFoca.png" />
+    <link
+      rel="icon"
+      href="images/navbarFooter/logoFoca.png"
+      type="images/png"
+    />
+    <!--CSS navbary footer-->
+    <link rel="stylesheet" href="css/navbarFooter.css" />
     <!--Referencia CSS-->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <div class="headerIzq">
-          <img src="images/logoFoca.png" alt="Logo de Foca Ice" width="100" />
+          <img
+            src="images/navbarFooter/logoFoca.png"
+            alt="Logo de Foca Ice"
+            width="150"
+          />
           <a href="index.html">Foca Ice</a>
         </div>
-        <div class="headerDer">
-          <a href="#nosotros">Nosotros</a>
-          <a href="productos.html">Productos</a>
-          <a href="#blog">Blog</a>
-          <a href="contacto.html">Contacto</a>
-        </div>
+
+        <ul class="headerDer">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <button class="botonNavBarPhone">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </nav>
     </header>
-    <main></main>
-    <br /><br />
-    <footer></footer>
+    <main>
+      <div class="presentacion">
+        <h1>Foca Ice: Deliciosas congeladas para cada momento</h1>
+        <p>
+          Disfruta la frescura auténtica de nuestras congeladas FocaIce. Sabores
+          intensos, calidad mexicana y una experiencia refrescante en cada
+          bocado.
+        </p>
+        <a href="productos.html" class="botonPresentacionProductosDestacados">
+          Ver productos destacados
+        </a>
+      </div>
+      <div class="productosEstrella">
+        <h2>Nuestros productos estrella</h2>
+        <div class="productosEstrellaContainer">
+          <div class="productoEstrella">
+            <img
+              src="images/productos/focaIce/productoTiras.png"
+              alt="Tiras Foca Ice"
+              width="200"
+            />
+            <h3>Tiras Foca</h3>
+            <p>
+              Perfectas para compartir o guardar en el congelador para ese
+              antojo sorpresa
+            </p>
+          </div>
+          <div class="productoEstrella">
+            <img
+              src="images/productos/focaFrut/productoBolsas.png"
+              alt="Raspadito Foca Frut"
+              width="200"
+            />
+            <h3>Foca Frut</h3>
+            <p>
+              Foca Frut te acompaña en la escuela, en la calle o donde quieras.
+            </p>
+          </div>
+          <div class="productoEstrella">
+            <img
+              src="images/productos/focaIce/productoCajaLado.png"
+              alt="Caja de tiras de Foca Ice"
+              width="200"
+            />
+            <h3>Caja Foca Party Pack</h3>
+            <p>
+              Ideal para fiestas, reuniones o tener 40 momentos refrescantes
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <h2>Descubre la frescura de Foca Ice</h2>
+        <video
+          src="images/index/videoFoca.mp4"
+          alt="Video promocional de Foca Ice"
+          controls=""
+          controlslist="nodownload "
+        ></video>
+      </div>
+      <div class="contacto">
+        <div class="imagenContacto">
+          <img
+            src="images/index/logoAzul.png"
+            alt="Logo obscuro de Foca Ice"
+            width="400"
+          />
+        </div>
+        <div class="textoContacto">
+          <h2>Contáctanos</h2>
+          <p>
+            Para consultas, pedidos especiales o cualquier otra información, no
+            dudes en contactarnos.
+          </p>
+          <a href="contacto.html" class="botonPresentacionProductosDestacados">
+            Ir a contacto
+          </a>
+        </div>
+      </div>
+    </main>
+    <br />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section" style="text-align: center">
+          <img src="images/navbarFooter/logoFoca.png" alt="Logo de Foca Ice" />
+        </div>
+        <div class="footer-section">
+          <h3>MENÚ</h3>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>CONTACTO</h3>
+          <ul>
+            <li>
+              <a href="tel:+525525356275">
+                <img
+                  src="images/navbarFooter/phoneIcon.png"
+                  alt="Icono de teléfono"
+                />
+                (+52) 55 2535 6275</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/525525356275"
+                target="_blank"
+                rel="noopener"
+              >
+                <!-- Abre conversacion a WhatsApp -->
+                <img
+                  src="images/navbarFooter/whatsappIcon.png"
+                  alt="Icono de WhatsApp"
+                />
+
+                (+52) 55 2535 6275</a
+              >
+            </li>
+            <li>
+              <a href="mailto:focaice@gmail.com">
+                <img
+                  src="images/navbarFooter/emailIcon.png"
+                  alt="Icono de email"
+                />
+                focaice@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section" style="text-align: center">
+          <!-- NOTA: espacio vacio (futuras secciones) -->
+          <img
+            src="images/navbarFooter/alibomboLogo.png"
+            alt="Logo de Alibombo"
+          />
+        </div>
+      </div>
+      <div class="footer-ultimo">
+        <p>&copy; 2026 FocaIce. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
   </body>
 </html>

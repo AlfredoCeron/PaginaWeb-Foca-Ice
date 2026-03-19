@@ -148,7 +148,7 @@
     transition: 0.3s; /* transición para el efecto de apertura del menú */
   }
   .headerDer a {
-    font-size: medium;
+    font-size: smaller;
   }
   .headerDer a:hover {
     font-size: large;
@@ -179,7 +179,7 @@
   border-radius: 10px;
   margin: 20px 10px;
   /* Imagen de fondo para Footer */
-  background-image: url("../images/fondoPalmerasPiso.png");
+  background-image: url("../images/navbarFooter/fondoPalmerasPiso.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

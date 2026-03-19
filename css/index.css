@@ -1,0 +1,52 @@
+main {
+  /* Margenes Izq-Der (centrado) */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px; /* separacion V entre elementos */
+  padding: 50px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.presentacion button {
+  background-color: #0cb1f2;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botonPresentacionProductosDestacados {
+  background-color: #0cb1f2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+/* VIDEO */
+
+.video video {
+  display: block;
+  background-color: red;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  justify-self: center;
+}
