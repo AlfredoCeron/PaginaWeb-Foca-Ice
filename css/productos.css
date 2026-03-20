@@ -1,0 +1,45 @@
+main {
+  /* Margenes Izq-Der (centrado) */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+model-viewer {
+  justify-self: center;
+  height: 450px; /*Altura del modelo 3D*/
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #f27f0c;
+  border-radius: 18px;
+  box-sizing: border-box;
+  background-color: white;
+  box-sizing: border-box; /* Borde no afecta  tamaño total del modelo */
+}
+/* PRODUCTOS */
+/*FOCA ICE*/
+.focaIceContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Separacion H entre elementos */
+  /* Scroll horizontal */
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.iceProducto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iceProducto img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #f27f0c;
+}

@@ -4,131 +4,207 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Titulo de la página-->
-    <title>Foca Ice</title>
+    <title>Foca Ice - Productos</title>
     <!--Icono de la pagina-->
-    <link rel="icon" href="images/logoFoca.png" />
-    <!--Referencia CSS-->
+    <link
+      rel="icon"
+      href="images/navbarFooter/logoFoca.png"
+      type="images/png"
+    />
+    <!--CSS navbary footer-->
     <link rel="stylesheet" href="css/navbarFooter.css" />
+    <!--Referencia CSS-->
+    <link rel="stylesheet" href="css/productos.css" />
   </head>
   <body>
     <header>
-      
-    </header>
-    
- <main>
-  <div class="contenido">
-    <section class="contenidoDistribucion">
-      
-          <h1>Distribución</h1>
-           <p>
-            Descubre cómo llevar la frescura de Focalce a tu negocio. ¡Sé parte
-            de nuestra red de distribuidores y refresca a tus clientes!
-          </p>
-
-          <h2>Conviértete en distribuidor</h2>
-          <p>
-            Si estás interesado en distribuir los productos de Focalce, completa
-            el siguiente formulario y nos pondremos en contacto contigo.
-          </p>
-         
-        
-    </section>
-    <aside class="tarjetaContacto">
-      <h2>Contáctanos</h2>
-       <p>
-            Si tienes alguna pregunta o necesitas ayuda, no dudes en
-            contactarnos. Estamos aquí para ayudarte.
-          </p>
-         
-    </aside>
-    <section class="formularioContacto"></section>
-    <section class="mapa"></section>
-  </div>
-<!-- 
-      <section class="contenidoDistribucion">
-        <div class="textoDistribucion">
-          <h1>Distribución</h1>
-          <p>
-            Descubre cómo llevar la frescura de Focalce a tu negocio. ¡Sé parte
-            de nuestra red de distribuidores y refresca a tus clientes!
-          </p>
-
-          <h2>Conviértete en distribuidor</h2>
-          <p>
-            Si estás interesado en distribuir los productos de Focalce, completa
-            el siguiente formulario y nos pondremos en contacto contigo.
-          </p>
+      <nav class="navbar">
+        <div class="headerIzq">
+          <img
+            src="images/navbarFooter/logoFoca.png"
+            alt="Logo de Foca Ice"
+            width="150"
+          />
+          <a href="index.html">Foca Ice</a>
         </div>
 
-        <aside class="tarjetaContacto">
-          <h2>Contáctanos</h2>
-          <p>
-            Si tienes alguna pregunta o necesitas ayuda, no dudes en
-            contactarnos. Estamos aquí para ayudarte.
-          </p>
-        </aside>
+        <ul class="headerDer">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li>
+            <a href="productos.html" style="font-weight: bold">Productos</a>
+          </li>
+          <li><a href="#blog">Blog</a></li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <button class="botonNavBarPhone">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="modelo3D">
+        <h1>Una experiencia única</h1>
+        <model-viewer
+          src="images/productos/cajaCerrada.glb"
+          alt="Modelo 3D de caja de Foca Ice"
+          camera-controls
+          auto-rotate
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          tone-mapping="neutral"
+          poster="images/productos/focaIce/productoCaja.png"
+          shadow-intensity="2"
+          shadow-softness="1"
+          loading="lazy"
+        >
+        </model-viewer>
       </section>
-
-      <section class="formularioContacto">
-        <br /><br />
-        <form>
-          <label for="nombre">Nombre *</label>
-          <br />
-
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingresa tu nombre"
-            required
-          />
-          <br />
-
-          <label for="email">Correo electrónico </label>
-          <br />
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ingresa tu correo electrónico"
-          />
-          <br />
-
-          <label for="telefono">Teléfono</label>
-          <br />
-
-          <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            placeholder="Ingresa tu número telefónico"
-            pattern="[0-9]{10}"
-          />
-          <br />
-
-          <label for="mensaje">Mensaje *</label>
-          <br />
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Ingresa tu mensaje"
-            required
-            style="padding-bottom: 20px;"
-          ></textarea>
-
-          <br />
-          <button type="submit">Enviar</button>
-        </form>
+      <section class="focaIceSection">
+        <h2>Foca Ice</h2>
+        <img
+          src="images/productos/posterLogo/posterFocaIce.png"
+          alt="Poster de Foca Ice"
+          width="100px"
+        />
+        <h3>10 sabores diferentes</h3>
+        <ul>
+          <li>Mango</li>
+          <li>Mango con chile</li>
+          <li>Uva</li>
+          <li>Fresa</li>
+          <li>Limón</li>
+          <li>Mora azúl</li>
+          <li>Chamoy</li>
+          <li>Tamarindo con chile</li>
+          <li>Grosella</li>
+          <li>Guanabana</li>
+        </ul>
+        <div class="focaIceContainer">
+          <div class="iceProducto">
+            <img
+              src="images/productos/focaIce/productoCirculo.png"
+              alt="Tiras de Foca Ice en forma circular"
+            />
+          </div>
+          <div class="iceProducto">
+            <img
+              src="images/productos/focaIce/productoTiras.png"
+              alt="Tiras de Foca Ice"
+            />
+          </div>
+          <div class="iceProducto">
+            <img
+              src="images/productos/focaIce/productoOrdenado.png"
+              alt="Tiras de Foca Ice organizadas verticalmente"
+            />
+          </div>
+          <div class="iceProducto">
+            <img
+              src="images/productos/focaIce/productoCajaLado.png"
+              alt="Caja de 40 tiras de Foca Ice"
+            />
+          </div>
+        </div>
       </section>
-      <br />
+      <section class="focaFrutSection">
+        <h2>Foca Frut</h2>
+        <img
+          src="images/productos/posterLogo/posterFocaFrut.png"
+          alt="Poster de Foca Frut"
+          width="100px"
+        />
+        <h3>6 sabores diferentes</h3>
+        <ul>
+          <li>Fresa</li>
+          <li>Uva</li>
+          <li>Mango</li>
+          <li>Grosella</li>
+          <li>Limón</li>
+          <li>Mora azúl</li>
+        </ul>
+      </section>
     </main>
--->
+    <br />
 
-    
-    <br /><br />
-    <footer>
-      
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section" style="text-align: center">
+          <img src="images/navbarFooter/logoFoca.png" alt="Logo de Foca Ice" />
+        </div>
+        <div class="footer-section">
+          <h3>MENÚ</h3>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>CONTACTO</h3>
+          <ul>
+            <li>
+              <a href="tel:+525525356275">
+                <img
+                  src="images/navbarFooter/phoneIcon.png"
+                  alt="Icono de teléfono"
+                />
+                (+52) 55 2535 6275</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/525525356275"
+                target="_blank"
+                rel="noopener"
+              >
+                <!-- Abre conversacion a WhatsApp -->
+                <img
+                  src="images/navbarFooter/whatsappIcon.png"
+                  alt="Icono de WhatsApp"
+                />
+
+                (+52) 55 2535 6275</a
+              >
+            </li>
+            <li>
+              <a href="mailto:focaice@gmail.com">
+                <img
+                  src="images/navbarFooter/emailIcon.png"
+                  alt="Icono de email"
+                />
+                focaice@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section" style="text-align: center">
+          <!-- NOTA: espacio vacio (futuras secciones) -->
+          <img
+            src="images/navbarFooter/alibomboLogo.png"
+            alt="Logo de Alibombo"
+          />
+        </div>
+      </div>
+      <div class="footer-ultimo">
+        <p>&copy; 2026 FocaIce. Todos los derechos reservados.</p>
+      </div>
     </footer>
+
+    <script src="js/navbar.js"></script>
+    <!-- Modelo 3D -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"
+    ></script>
   </body>
 </html>
