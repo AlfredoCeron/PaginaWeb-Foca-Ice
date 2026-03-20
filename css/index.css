@@ -45,17 +45,17 @@ main {
 .productoEstrella {
   margin-bottom: 50px;
 }
-.productoEstrella {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra Image H*/
-}
+
 .productosEstrellaContainer {
   display: flex;
   flex-direction: row;
   gap: 20px; /*Separacion H entre productos*/
 }
-
+.productoEstrella {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra Image H*/
+}
 .productoEstrella img {
   width: 200px;
   height: 200px;
