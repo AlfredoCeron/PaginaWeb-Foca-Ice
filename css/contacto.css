@@ -76,6 +76,7 @@ main {
     /* Margen Izq-Der (ocupa casi toda la pantalla) */
     margin: 10px;
   }
+
   .contenidoDistribucion {
     flex-wrap: wrap; /* 1 Fila */
   }
